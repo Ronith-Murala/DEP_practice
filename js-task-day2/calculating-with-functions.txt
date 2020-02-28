@@ -1,3 +1,7 @@
+/*
+Link : https://www.codewars.com/kata/calculating-with-functions
+*/
+
 function zero(exp) {
   return exp ? exp(0) : 0 
 }
@@ -30,15 +34,15 @@ function nine(exp) {
 }
 
 
-function plus(b) { 
-  return function(a){return a+b} 
+function plus(value2) { 
+  return function(value1){return value1+value2} 
 }
-function minus(b) { 
-  return function(a){return a-b} 
+function minus(value2) { 
+  return function(value1){return value1-value2} 
 }
-function times(b) { 
-  return function(a){return a*b} 
+function times(value2) { 
+  return function(value1){return value1*value2} 
 }
-function dividedBy(b) { 
-  return function(a){return Math.floor(a / b)} 
+function dividedBy(value2) { 
+  return function(value1){return Math.floor(value1/value2)} 
 }

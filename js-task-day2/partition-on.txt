@@ -1,3 +1,7 @@
+/*
+Link : https://www.codewars.com/kata/partition-on
+*/
+
 function partitionOn(pred, items) {
   let arr1=[];
   let arr2=[];
