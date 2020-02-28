@@ -1,8 +1,8 @@
-function rentalCarCost(d) {
-  if(d>=7)
-    return d*40-50;
-  else if(d>=3)
-    return d*40-20;
+function rentalCarCost(days) {
+  if(days>=7)
+    return days*40-50;
+  else if(days>=3)
+    return days*40-20;
   else
-    return d*40;
+    return days*40;
 }

@@ -1,8 +1,8 @@
-function getMiddle(s)
+function getMiddle(str)
 {
-  var t=s.length/2;
-  if(s.length%2===0)
-    return s.substring(t-1,t+1);
+  var mid=s.length/2;
+  if(str.length%2===0)
+    return str.substring(mid-1,mid+1);
   else
-    return s.charAt(t);
+    return str.charAt(mid);
 }
