@@ -1,0 +1,4 @@
+/*
+Link : http://www.codewars.com/kata/opposite-number
+*/
+

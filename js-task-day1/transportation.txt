@@ -1,0 +1,4 @@
+/*
+Link : https://www.codewars.com/kata/transportation-on-vacation
+*/
+

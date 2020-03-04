@@ -1,0 +1,4 @@
+/*
+Link : https://www.codewars.com/kata/basic-mathematical-operations
+*/
+
