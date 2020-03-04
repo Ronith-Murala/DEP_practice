@@ -2,3 +2,7 @@
 Link : https://www.codewars.com/kata/word-count
 */
 
+function countWords(str) {
+  if(str.trim()=="") return 0;
+  return str.trim().split(/\s+/).length;
+}
