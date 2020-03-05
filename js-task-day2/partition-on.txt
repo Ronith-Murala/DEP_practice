@@ -3,8 +3,8 @@ Link : https://www.codewars.com/kata/partition-on
 */
 
 function partitionOn(pred, items) {
-  let arr1=[];
-  let arr2=[];
+  const arr1=[];
+  const arr2=[];
   for(i=0;i<items.length;i++){
     if(pred(items[i])===true){
       arr2.push(items[i]);
