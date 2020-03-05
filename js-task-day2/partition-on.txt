@@ -2,3 +2,19 @@
 Link : https://www.codewars.com/kata/partition-on
 */
 
+function partitionOn(pred, items) {
+  const arr1=[];
+  const arr2=[];
+  for(i=0;i<items.length;i++){
+    if(pred(items[i])===true){
+      arr2.push(items[i]);
+      }
+    else{
+      arr1.push(items[i]);
+      }
+  }
+  items.splice(0,arr1.length, ...arr1);
+  items.splice(arr1.length,arr2.length, ...arr2);
+  return arr1.length;
+}
+
