@@ -10,3 +10,4 @@ function getMiddle(str)
   else
     return str.charAt(mid);
 }
+
