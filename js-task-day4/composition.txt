@@ -1,0 +1,9 @@
+/*
+Link: http://www.codewars.com/kata/function-composition
+*/
+
+function compose(f,g) {
+  return function(arg){
+     return f(g.call(this,...arguments));
+  }
+}

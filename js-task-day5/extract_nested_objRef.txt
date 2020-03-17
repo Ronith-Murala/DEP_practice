@@ -1,0 +1,19 @@
+/*
+Link: http://www.codewars.com/kata/extract-nested-object-reference
+*/
+
+Object.prototype.hash = function(string) {
+    o=obj;
+    string = string.replace(/\[(\w+)\]/g, '.$1'); 
+    string = string.replace(/^\./, '');  
+    var a = string.split('.');
+    for (var i = 0, n = a.length; i < n; ++i) {
+        var k = a[i];
+        if (o.hasOwnProperty(k)) {
+            o = o[k];
+        } else {
+            return;
+        }
+    }
+    return o;
+}

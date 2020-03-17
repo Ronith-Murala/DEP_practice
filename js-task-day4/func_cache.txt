@@ -1,0 +1,34 @@
+/*
+Link : http://www.codewars.com/kata/function-cache
+*/
+
+function cache(func) {
+  var memo = {};
+
+  function f(a, b) {
+    let value;
+    let i,j;
+    if(typeof a === "object")
+      i=JSON.stringify(a);
+    else
+      i=a;
+    if(typeof b === "object")
+      j=JSON.stringify(b);
+    else
+      j=b;
+
+    memo[i] = memo[i] || {};
+
+    if (i in memo && j in memo[i]) {
+      value = memo[i][j];
+    } 
+    else {
+      value=func(a,b);
+      memo[i][j] = value;
+    }
+
+    return value;
+  }
+
+  return f;
+}
