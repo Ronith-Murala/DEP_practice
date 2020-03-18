@@ -3,7 +3,7 @@ Link : http://www.codewars.com/kata/function-cache
 */
 
 function cache(func) {
-  var memo = {};
+  let memo = {};
 
   function f(a, b) {
     let value;

@@ -6,9 +6,9 @@ Object.prototype.hash = function(string) {
     o=obj;
     string = string.replace(/\[(\w+)\]/g, '.$1'); 
     string = string.replace(/^\./, '');  
-    var a = string.split('.');
-    for (var i = 0, n = a.length; i < n; ++i) {
-        var k = a[i];
+    const a = string.split('.');
+    for (let i = 0, k, n = a.length; i < n; ++i) {
+        k = a[i];
         if (o.hasOwnProperty(k)) {
             o = o[k];
         } else {

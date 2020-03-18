@@ -3,7 +3,7 @@ Link: http://www.codewars.com/kata/a-chain-adding-function
 */
 
 function add(n){
-  var func = function(a) { return add (n + a); };
+  let func = function(a) { return add (n + a); };
   func.valueOf = function() {  return n; };
   return func;
 }
