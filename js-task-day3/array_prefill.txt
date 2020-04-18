@@ -1,0 +1,18 @@
+/*
+Link : http://www.codewars.com/kata/prefill-an-array
+*/
+
+function prefill(n, v) {
+    let arr=[];
+ if(isFinite(n) && n%1 === 0){  
+    let k=parseInt(n, 10);
+    if(k>=0)
+      arr = Array(k).fill(v)
+    else
+     throw new TypeError(n+" is invalid")
+  }
+  else{
+   throw new TypeError(n+" is invalid")
+  }
+  return arr;
+}

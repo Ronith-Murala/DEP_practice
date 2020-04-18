@@ -1,0 +1,37 @@
+/*
+Link: http://www.codewars.com/kata/array-helpers
+*/
+
+Array.prototype.square = function() {
+  return this.map(function(val) {
+    return val*val;
+  });
+};
+
+Array.prototype.cube = function() {
+  return this.map(function(val) {
+    return val*val*val;
+  });
+};
+
+Array.prototype.average = function () {  
+  return this.sum()/this.length; 
+}
+
+Array.prototype.sum = function() {
+  return this.reduce(function(a,b) {
+    return a+b;
+  },0);
+}
+
+Array.prototype.odd = function() {
+  return this.filter(function(num) {
+    return num%2!==0;
+  });
+}
+
+Array.prototype.even = function() {
+  return this.filter(function(num) {
+    return num%2===0;
+  });
+}

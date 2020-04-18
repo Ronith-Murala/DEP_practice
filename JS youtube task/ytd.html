@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+        body{
+            background-color: black;
+        }
+        @font-face{
+            font-family:'digital-clock-font';
+            src: url(digital-7.mono.ttf);
+        }
+        .section{
+            height: 80px;
+            border: 2px solid tomato;
+            background-color: white;
+            align-content: center;
+            align-items: center;        
+        }
+        .container-3{
+            width: 900px;
+            vertical-align: middle;
+            white-space: nowrap;
+            position: relative;
+            margin-left: 700px;
+            margin-top: -75px;
+        }
+ 
+        .container-3 input#search{
+            width: 300px;
+            height: 60px;
+            background: #2b303b;
+            border: none;
+            font-size: 10pt;
+            color: #262626;
+            padding-left: 15px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            color: #fff;
+        }
+
+        .container-3 input#search::-webkit-input-placeholder {
+            color: #65737e;
+        }
+
+        .container-3 input#search:focus, .container-3 input#search:active{
+            outline:none; 
+        }
+        .btn{
+            background-color: black;
+            color: white;
+            font-size: large;
+            margin-top: 5px;
+            height: 40px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .break {
+            page-break-before: always;
+        }
+        .dig{
+            font-family: digital-clock-font;
+            font-size: 22px;
+            background-color: black;
+            color: white;
+            border: 1px solid blanchedalmond;
+            padding-top: 2px;
+            padding-bottom: 5px;
+        }
+
+        #results{
+            width: 300px;
+            display: grid;
+            column-gap: 40px;
+            grid-template-columns: 320px 320px 320px 320px 320px;
+        }
+        #results figure {    
+            width: 320px;
+            border: 2px solid slateblue;
+            padding: 1px;
+            background-color: thistle;
+        }
+
+        </style>
+    </head>
+    <body>
+        <div class="section">
+        <div class="box">
+            <div class="box">
+                <img src="lg.png" style="height: 80px; width: 120px; margin-left: 570px">
+                <div class="container-3">
+                    <input type="search" id="search" placeholder="Search..." />
+                    <button type="submit" id="submit" class="btn">Go</button>
+                    <button type="reset" id="prepage">Prev Page</button>
+                    <button type="reset" id="nxtpage">Next Page</button>
+                    <span class="dig">&nbsp;PAGE: <span id="no"></span>&nbsp;</span>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div id="results"></div>
+        <script src="appl.js"></script>
+    </body>
+</html>

@@ -1,0 +1,7 @@
+/*
+Link: http://www.codewars.com/kata/new-with-apply
+*/
+
+function construct(Greeting,...args) {
+  return new Greeting(...args)
+}

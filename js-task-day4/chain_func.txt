@@ -1,0 +1,9 @@
+/*
+Link: http://www.codewars.com/kata/a-chain-adding-function
+*/
+
+function add(n){
+  let func = function(a) { return add (n + a); };
+  func.valueOf = function() {  return n; };
+  return func;
+}
