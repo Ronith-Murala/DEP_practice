@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <style>
+            .div1 {
+                height: 120px;
+                background-color: #051d33ce;
+                display: flex;
+                padding-top: 2px;
+                align-items: center;
+                justify-content: center;
+                align-content: center;
+            }
+            .div2 {
+                background-color: #ffffff;
+                height: 80px;
+                width: 200px;
+                color: #051d33ce;
+                border: 2px solid tomato;
+                line-height: 10;
+            }
+            .div3 {
+                height: 50px;
+                background-color: #051d33ce;
+                display: flex;
+                padding-top: 6px;
+                align-items: center;
+                justify-content: center;
+                align-content: center;
+            }
+            .rit{
+                float: right;
+                align-self: right;
+            }
+            .lft{
+                float: left;
+            }
+            .hr1 { 
+                position: relative; 
+                top: 20px; 
+                border: none; 
+                height: 1px; 
+                background: black; 
+                margin-bottom: 50px; 
+                width: 95%;
+            } 
+            .hr2 {
+                width: 87%;
+                margin-left: 2%;
+            }
+            p {
+                margin-top: 1em ;
+                margin-bottom: 1em ;
+                line-height: 0.5 ;
+            }
+            .nobr { white-space: nowrap }
+            .img {
+                width : 200px;
+                height: 200px;
+                padding-right: 5px;
+            }
+            .container {
+                display: flex;
+                align-content: flex-start;
+            }
+            .image {
+                flex-grow: 0;
+                padding-right: 10px;
+            }
+            .txt{
+                flex-grow: 1;
+            }
+            .f1{
+                font-size: 20px;
+            }
+            .f2{
+                font-size: 10px;
+            }
+            .f3{
+                font-size: 14px;
+            }
+
+            .col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 1000px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 90%;
+  }
+  [class*="lft"]{
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    justify-items: center;
+    float: center;
+    text-align: center;
+  }
+  [class*="hr1"]{
+        top: 120px;
+        margin-bottom: 130px;
+  }
+  [class*="container"]{
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-content: center;
+      align-self: center;
+  }
+  [class*=".txt"]{
+    flex-basis: 100%;
+    height: 0;
+    width: 70%;
+  }
+  [class*=".f1"]{
+    font-size: 60px;
+  }
+  [class*=".f2"]{
+    font-size: 30px;
+  }
+  [class*=".f3"]{
+    font-size: 36px;
+  }
+}
+            
+        </style>
+    </head>
+
+
+<body>
+        
+<div class="div1">
+    <div class="div2">
+        <p style="font-size:150%; color:#051d33ce; font-family:Roboto, sans-serif";>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>NEWS BLOG</b></p>
+        <p style="font-size:80%; color:#051d33ce">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WORLDWIDE NEWS</p>
+    </div>
+</div>
+
+</br>  
+<div class="w3-row-padding" style="height:40px">
+    
+    <div class="w3-col col-5 lft">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label><b>SELECT CATEGORY:</b></label>
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select id="cat" style="width:200px; height:30px">
+        <option value="All">All</option>
+        <option value="Other">Other</option>
+        </select>
+    </div>
+    
+    <div class="w3-col col-4 lft">
+        <label><h2 style="color:#051d33ce; font-family: Arial, Helvetica, sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;<b>ALL NEWS</b></h2></label>
+    </div>
+
+    <div class="w3-col col-1 lft">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label><b>SUBSCRIBE</b></label>
+        <br>
+        <nobr>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder="Email Address" style="height:30px;"/><button class="w3-black" style="height:31px; margin: 0px -2px -2px;">SUBSCRIBE</button>
+        </nobr>
+    </div>
+
+</div>
+
+<center><hr class="hr1"></center>
+
+<div class="w3-row-padding" >
+
+    <div class="container" >
+        <div class="image">
+            <img src="http://placehold.it/200x200?text=%20+" >
+        </div>
+        <div class="w3-col col-9 txt">
+            <p class= "f1" style="color:#051d33ce;">Title One</p>
+            <p class= "f2" style="color:#A9A9A9">Posted on 19 Feb, 2020 // Category: Category One</p>
+            <p class= "f3" style="line-height: 20px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquauis ipsum suspendisse ultrices gravidasus commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquauis ipsum suspendisse ultrices gravidasus commodo.</p>
+            <button style="background-color:tomato; color:white; height:36px">Continue Reading</button>
+        </div>
+    </div>
+    <hr class="hr2">
+  
+    <div class="container">
+        <div class="image">
+            <img src="http://placehold.it/200x200?text=%20+" >
+        </div>
+        <div class="w3-col col-9 txt">
+            <p class= "f1" style="color:#051d33ce;">Title Two</p>
+            <p class= "f2" style="color:#A9A9A9">Posted on 19 Feb, 2020 // Category: Category Two</p>
+            <p class= "f3" style="line-height: 20px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquauis ipsum suspendisse ultrices gravidasus commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquauis ipsum suspendisse ultrices gravidasus commodo.</p>
+            <button style="background-color:tomato; color:white; height:36px">Continue Reading</button>
+        </div>
+    </div>
+    <hr class="hr2">
+  
+    <div class="container">
+        <div class="image">
+            <img src="http://placehold.it/200x200?text=%20+">
+        </div>
+        <div class="w3-col col-9 txt">
+            <p class= "f1" style="color:#051d33ce;">Title Three</p>
+            <p class= "f2" style="color:#A9A9A9">Posted on 19 Feb, 2020 // Category: Category Three</p>
+            <p class= "f3" style="line-height: 20px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquauis ipsum suspendisse ultrices gravidasus commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquauis ipsum suspendisse ultrices gravidasus commodo.</p>
+            <button style="background-color:tomato; color:white; height:36px">Continue Reading</button>
+        </div>
+    </div>
+</div>
+  
+<br>
+<div class="div3"><p style="color:white; font-size:12px">&copy; NewsFeed 2019</p></div>
+</body>
+
+</html>
